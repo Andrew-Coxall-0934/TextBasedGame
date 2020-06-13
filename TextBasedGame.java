@@ -9,10 +9,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;  
 
 public class TextBasedGame {
-	// comment
+    // Main
 	
 	public static void main(String[] args) {
-		// comment
+		// Main void
 		
 		String forestOrLakeDecision;
 		Boolean forestOrLakeValidChoice = false;
@@ -20,9 +20,9 @@ public class TextBasedGame {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     	System.out.println("Welcome to your adventure.");
-    	System.out.println("You are in a your home town named “Bark town” and your mission is to try to get to Star city. Best of luck =)");
-		System.out.println("There are two ways that you can get to Star city. The Lake and the Forest.");
-		System.out.println("Which would you like to try: (Lake or Forest)");
+    	System.out.println("You are in a your home town named “Bark town” and your mission is to try to get to Star City. Best of luck =)");
+		System.out.println("There are two ways that you can get to Star City. The Lake and the forest.");
+        System.out.println("Which would you like to try (Lake or Forest): ");
 		
 		try {
 			do {
@@ -36,7 +36,7 @@ public class TextBasedGame {
 					forestOrLakeValidChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Lake or Forest)");
 				}
 			} while (forestOrLakeValidChoice != true);
@@ -47,7 +47,7 @@ public class TextBasedGame {
 	}
 	
 	static void forest() {
-		// comment
+		// Start of forest
 		
 		String runOrTalk;
 		Boolean runOrtalkChoice = false;
@@ -55,7 +55,7 @@ public class TextBasedGame {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("You are now in the woods. You see a man standing far off with a sword.");
 		System.out.println("Would you like to Talk or Run?");
-		System.out.println("Which would you like to try: ");
+		System.out.println("Which would you like to try (Talk or Run): ");
 		
 		try {
 			do {
@@ -69,7 +69,7 @@ public class TextBasedGame {
 					runOrtalkChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Talk or Run)");
 				}
 			} while (runOrtalkChoice != true);
@@ -80,7 +80,7 @@ public class TextBasedGame {
 	}
 	
 	static void run() {
-		// comment
+		// Run away
 		
 		String callForHelpOrTryAndGetOut;
 		Boolean callForHelpOrTryAndGetOutChoice = false;
@@ -88,7 +88,7 @@ public class TextBasedGame {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("You are captured by a group of giant spiders!");
 		System.out.println("Would you like to Call for help or Try and get out?");
-		System.out.println("Which would you like to try: ");
+		System.out.println("Which would you like to try (Call for help or Try and get out: ");
 		
 		try {
 			do {
@@ -102,7 +102,7 @@ public class TextBasedGame {
 					callForHelpOrTryAndGetOutChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Call for help or Try and get out)");
 				}
 			} while (callForHelpOrTryAndGetOutChoice != true);
@@ -113,14 +113,15 @@ public class TextBasedGame {
 	}
 	
 	static void talk() {
-		// comment
+		// Try and talk
+
 		String loudlyOrQuitly;
 		Boolean loudlyOrQuitlyChoice = false;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("You walk up to the man and he tells you that we have to be careful in the woods");
-		System.out.println("Woul you like to walk Loudly or Quitly");
-		System.out.println("Which would you like to try:");
+		System.out.println("You walk up to the man and he tells you that we have to be careful in the woods.");
+		System.out.println("Would you like to walk Loudly or Quitly.");
+		System.out.println("Which would you like to try (Loudly or Quitly):");
 		
 		try {
 			do {
@@ -134,8 +135,8 @@ public class TextBasedGame {
 					loudlyOrQuitlyChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
-					System.out.println("Which would you like to try: (:Loudly or Quitly)");
+					System.out.println("Invalid input.");
+					System.out.println("Which would you like to try: (Loudly or Quitly)");
 				}
 			} while (loudlyOrQuitlyChoice != true);
 			
@@ -144,8 +145,9 @@ public class TextBasedGame {
      	}
 	}
 	
-	static void fightOrRun() {
-		// comment 
+	/*
+  static void fightOrRun() {
+		// Run or fight choice 
 		
 		String  fightOrRun;
 		Boolean fightOrRunChoice = false;
@@ -153,18 +155,19 @@ public class TextBasedGame {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("My Function called");
 	}
+  */
 	
 	static void callForHelp() {
-		// comment
+		// Call for help choice 
 		
 		String  fightOrRunFromSpiders;
 		Boolean fightOrRunFromSpidersChoice = false;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("The man you saw from before comes and gets you out ! =) ");
-		System.out.println("But ... Oh no the spiders saw you");
+		System.out.println("The man you saw from before comes and gets you out! =) ");
+		System.out.println("But ... Oh no the spiders saw you.");
 		System.out.println("Would you like to Fight or Run?");
-		System.out.println("What would you like to do: ");
+		System.out.println("What would you like to do (Fight or Run): ");
 		
 		try {
 			do {
@@ -189,25 +192,21 @@ public class TextBasedGame {
 	}
 	
 	static void TryAndGetOut() {
-		// comment
-		
-		String  TryAndGetOut;
-		Boolean TryAndGetOutChoice = false;
-		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		// Try and get out and you will die
+
 		System.out.println("Oh, no the spiders saw you trying to get out and killed you! =( ");
 	}
 	
 	static void fightSpiders() {
-		// comment
+		// Try and fight spiders
 		
 		String  takeHimWIthYouOrLeaveHim;
 		Boolean takeHimWIthYouOrLeaveHimChoice = false;
 			
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("You killed the spiders but the man is knocked unconscious");
+		System.out.println("You killed the spiders but the man is knocked unconscious.");
 		System.out.println("Would you like to Take him with you or Leave him?");
-		System.out.println("Which would you like to try: ");
+		System.out.println("Which would you like to try (Take him with you or Leave him): ");
 		
 		try {
 			do {
@@ -221,7 +220,7 @@ public class TextBasedGame {
 					takeHimWIthYouOrLeaveHimChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Take him with you or Leave him)");
 				}
 			} while (takeHimWIthYouOrLeaveHimChoice != true);
@@ -232,48 +231,42 @@ public class TextBasedGame {
 	}
 		
 	static void RunFromSpiders() {
-		// comment 
-		
-		String  TryAndGetOut;
-		Boolean TryAndGetOutChoice = false;
+		// Try and run from spiders 
 			
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("You got away safely and made your way towards Star city");
+		System.out.println("You got away safely and made your way towards Star City.");
 		System.out.println("You enter the bar to meet up with your contact for your next job.");
-		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you ");
+		System.out.println("He buys you a drink… It’s poisoned and there's no one to help you. ");
 		System.out.println("You died =(");
 	}	
-		static void takeHimWIthYou() {
-		// comment 
-		
-		String  TryAndGetOut;
-		Boolean TryAndGetOutChoice = false;
-			
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("You take him with you and hope that he is going to be ok");
-		System.out.println("When you get to Star city you go to the hospital");
+	
+    static void takeHimWIthYou() {
+		// Take him with you
+				
+		System.out.println("You take him with you and hope that he is going to be ok.");
+		System.out.println("When you get to Star City you go to the hospital.");
 		System.out.println("");
-		System.out.println("Thank you for playing see you next time ");
+		System.out.println("Thank you for playing see you next time.");
 	}
+
 	static void LeaveHim() {
-		// comment 
+		// Leave him 
 		
-		System.out.println("You left the man in the woods");
+		System.out.println("You left the man in the woods.");
 		System.out.println("You enter the bar to meet up with your contact for your next job.");
-		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you ");
+		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you.");
 		System.out.println("You died =(");
 	}
 	
 	static void Loudly() {
-		// comment 
+		// Walk loudly 
 		
 		String  AttackOrNotMoveMole;
 		Boolean AttackOrNotMoveMoleChoice = false;
 			
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("A giant mole comes up from the groud!");
-		System.out.println("Would you like to Attack or Not move");
-		System.out.println("Which would you like to try: ");
+		System.out.println("Would you like to Attack or Not move.");
+		System.out.println("Which would you like to try (Attack or Not move): ");
 		
 		try {
 			do {
@@ -287,7 +280,7 @@ public class TextBasedGame {
 					AttackOrNotMoveMoleChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Attack or Not move)");
 				}
 			} while (AttackOrNotMoveMoleChoice != true);
@@ -298,15 +291,15 @@ public class TextBasedGame {
 	}
 	
 	static void Quitly() {
-		// comment 
+		// Walk quitly 
 		
 		String  AttackOrNotMoveTroll;
 		Boolean AttackOrNotMoveTrollChoice = false;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("You have walked into a trolls den. You don't think it can see you");
-		System.out.println("Would you like to Attack or Not move");
-		System.out.println("Which would you like to try: ");
+		System.out.println("You have walked into a troll's den. You don't think it can see you.");
+		System.out.println("Would you like to Attack or Not move.");
+		System.out.println("Which would you like to try (Attack or Not move): ");
 		
 		try {
 			do {
@@ -329,21 +322,24 @@ public class TextBasedGame {
 			System.out.println(e);
      	}
 	}
+
 	static void AttackTroll() {
 		// You die if you try and kill the troll
 		
-	System.out.println("You died =( ");  
+	  System.out.println("You died =( ");  
 	}
+  
 	static void NotMoveTroll() {
+    // Try and not move troll
 
 	String  takeHimWIthYouOrLeaveHimTroll;
 	Boolean takeHimWIthYouOrLeaveHimTrollChoice = false;
 			
 	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	System.out.println("The man has been knocked out by the troll .....the troll moves on.");
-	System.out.println("Would you like to Take him with you or Leave him");
-	System.out.println("Which would you like to try: ");  
-			try {
+	System.out.println("The man has been knocked out by the troll ... the troll moves on.");
+	System.out.println("Would you like to Take him with you or Leave him.");
+	System.out.println("Which would you like to try (Take him with you or Leave him): ");  
+		try {
 			do {
 				takeHimWIthYouOrLeaveHimTroll = br.readLine();
 				
@@ -364,27 +360,36 @@ public class TextBasedGame {
 			System.out.println(e);
      	}
 	}
-	static void LeaveHimTroll(){
-		System.out.println("You got away safely and made your way towards Star city");
+
+	static void LeaveHimTroll() {
+    // Try and leave him troll
+
+		System.out.println("You got away safely and made your way towards Star City.");
 		System.out.println("You enter the bar to meet up with your contact for your next job.");
-		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you ");
+		System.out.println("He buys you a drink ... It’s poisoned and there's no one to help you.");
 		System.out.println("You died =(");
 	}
-	static void takeHimWIthYouTroll(){
-		System.out.println("You take him with you and hope that he is going to be ok");
-		System.out.println("When you get to Star city you go to the hospital");
+
+	static void takeHimWIthYouTroll() {
+    // Try and take him with you troll
+
+		System.out.println("You take him with you and hope that he is going to be ok.");
+		System.out.println("When you get to Star City you go to the hospital.");
 		System.out.println("");
-		System.out.println("Thank you for playing see you next time ");
+		System.out.println("Thank you for playing see you next time.");
 	}
-	static void AttackMole(){
+
+	static void AttackMole() {
+    // trys and attack mole
+
 		String  takeHimWIthYouOrLeaveHimMole;
 		Boolean takeHimWIthYouOrLeaveHimMoleChoice = false;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("The man has been knocked out by the mole .....the mole moves on.");
-		System.out.println("Would you like to Take him with you or Leave him");
-		System.out.println("Which would you like to try: ");  
-				try {
+		System.out.println("The man has been knocked out by the mole ... the mole moves on.");
+		System.out.println("Would you like to Take him with you or Leave him.");
+		System.out.println("Which would you like to try (Take him with you or Leave him): ");  
+		try {
 			do {
 				takeHimWIthYouOrLeaveHimMole = br.readLine();
 				
@@ -396,7 +401,7 @@ public class TextBasedGame {
 					takeHimWIthYouOrLeaveHimMoleChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Take him with you or Leave him)");
 				}
 			} while (takeHimWIthYouOrLeaveHimMoleChoice != true);
@@ -405,31 +410,43 @@ public class TextBasedGame {
 			System.out.println(e);
      	}
 	}
-	static void NotMoveMole(){
-		System.out.println("Oh no the mole saw you");
+
+	static void NotMoveMole() {
+    // try and not move mole
+
+		System.out.println("Oh no the mole saw you.");
 		System.out.println("The mole killed you =(");
 	}
-	static void takeHimWIthYouMole(){
-		System.out.println("You take him with you and hope that he is going to be ok");
-		System.out.println("When you get to Star city you go to the hospital");
+
+	static void takeHimWIthYouMole() {
+    // try and take him with you mole
+
+		System.out.println("You take him with you and hope that he is going to be ok.");
+		System.out.println("When you get to Star City you go to the hospital.");
 		System.out.println("");
-		System.out.println("Thank you for playing see you next time ");
+		System.out.println("Thank you for playing see you next time.");
 	}
-	static void LeaveHimMole(){
-		System.out.println("You got away safely and made your way towards Star city");
+
+	static void LeaveHimMole() {
+    // try and leave him mole
+
+		System.out.println("You got away safely and made your way towards Star City.");
 		System.out.println("You enter the bar to meet up with your contact for your next job.");
-		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you ");
+		System.out.println("He buys you a drink ... It’s poisoned and there's no one to help you.");
 		System.out.println("You died =(");
 	}
-	static void lake(){
+
+	static void lake() {
+    // The lake
+
 		String  swimOrTalk;
 		Boolean swimOrTalkChoice = false;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("The water is deep and blue, you could swim but youy also see a ma witha boat.");
-		System.out.println("Would you like to Talk or Swim");
-		System.out.println("Which would you like to try: ");  
-				try {
+		System.out.println("The water is deep and blue, you could swim but you also see a man with a boat.");
+		System.out.println("Would you like to Talk or Swim.");
+		System.out.println("Which would you like to try (Talk or Swim): ");  
+		try {
 			do {
 				swimOrTalk = br.readLine();
 				
@@ -441,7 +458,7 @@ public class TextBasedGame {
 					swimOrTalkChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Swim or Talk)");
 				}
 			} while (swimOrTalkChoice != true);
@@ -450,17 +467,19 @@ public class TextBasedGame {
 			System.out.println(e);
      	}	
 	}
-	static void talkLake(){
+
+	static void talkLake() {
+    // Talk to the man at the lake
 		
 	String  workOrFightManLake;
 	Boolean workOrFightManLakeChoice = false;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("The man says you can come on his boat if you work for him.");
-		System.out.println("You could work for him or you could try an take over his ship");
-		System.out.println("Would you like to Fight man or Work");
-		System.out.println("Which would you like to try: ");  
-				try {
+		System.out.println("You could work for him or you could try an take over his ship.");
+		System.out.println("Would you like to Fight man or Work.");
+		System.out.println("Which would you like to try (Fight man or Work): ");  
+		try {
 			do {
 				workOrFightManLake = br.readLine();
 				
@@ -472,7 +491,7 @@ public class TextBasedGame {
 					workOrFightManLakeChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Help or Fight)");
 				}
 			} while (workOrFightManLakeChoice != true);
@@ -481,16 +500,19 @@ public class TextBasedGame {
 			System.out.println(e);
      	}	
 	}
-	static void fightManLake(){
-		
-	String  runOrFightShark;
-	Boolean runOrFightSharkChoice = false;
+
+	static void fightManLake() {
+        // Fight the man at the lake
+            
+        String  runOrFightShark;
+        Boolean runOrFightSharkChoice = false;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("A gaint shark comes out of the water, it smells blood");
-		System.out.println("Would you like to Fight or Run");
-		System.out.println("Which would you like to try: ");  
-				try {
+		System.out.println("A gaint shark comes out of the water, it smells blood.");
+		System.out.println("Would you like to Fight or Run.");
+		System.out.println("Which would you like to try (Fight or Run): ");  
+		
+        try {
 			do {
 				runOrFightShark = br.readLine();
 				
@@ -502,7 +524,7 @@ public class TextBasedGame {
 					runOrFightSharkChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Run or Fight)");
 				}
 			} while (runOrFightSharkChoice != true);
@@ -511,16 +533,18 @@ public class TextBasedGame {
 			System.out.println(e);
      	}	
 	}
-	static void runShark(){
+
+	static void runShark() {
+        // Run from the shark
 		
 		String  takeHimWIthYouOrLeaveHimLakeShark;
 		Boolean takeHimWIthYouOrLeaveHimLakeSharkChoice = false;
 			
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("The man with the boat comes and help you");
-		System.out.println("You killed the shark but the man is knocked unconscious");
+		System.out.println("The man with the boat comes and help you.");
+		System.out.println("You killed the shark but the man is knocked unconscious.");
 		System.out.println("Would you like to Take him with you or Leave him?");
-		System.out.println("Which would you like to try: ");
+		System.out.println("Which would you like to try (Take him with you or Leave him): ");
 		
 		try {
 			do {
@@ -534,7 +558,7 @@ public class TextBasedGame {
 					takeHimWIthYouOrLeaveHimLakeSharkChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Take him with you or Leave him)");
 				}
 			} while (takeHimWIthYouOrLeaveHimLakeSharkChoice != true);
@@ -543,20 +567,28 @@ public class TextBasedGame {
 			System.out.println(e);
      	}
 	}
-	static void takeHimWIthYouLakeShark(){
-		System.out.println("You take him with you and hope that he is going to be ok");
-		System.out.println("When you get to Star city you go to the hospital");
+
+	static void takeHimWIthYouLakeShark() {
+        // Take the man with you skark
+
+		System.out.println("You take him with you and hope that he is going to be ok.");
+		System.out.println("When you get to Star City you go to the hospital.");
 		System.out.println("");
-		System.out.println("Thank you for playing see you next time ");
+		System.out.println("Thank you for playing see you next time.");
 	}
-	static void LeaveHimLakeShark(){
-		System.out.println("You got away safely and made your way towards Star city");
+
+	static void LeaveHimLakeShark() {
+        // Leave the man shark
+		System.out.println("You got away safely and made your way towards Star city.");
 		System.out.println("You enter the bar to meet up with your contact for your next job.");
-		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you ");
+		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you.");
 		System.out.println("You died =(");
 	}
-	static void fightShark(){
+
+	static void fightShark() {
+        // fight the shark
 		System.out.println("You both died trying to fight the shark =(");
+    
 	}
 	
 	//// start of work on lake part
@@ -565,15 +597,17 @@ public class TextBasedGame {
 	//
 	//
 	
-	static void work(){
-	String  runOrFightPirates;
-	Boolean runOrFightPiratesChoice = false;
+	static void work() {
+        // work for the man
+
+        String  runOrFightPirates;
+        Boolean runOrFightPiratesChoice = false;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("A ship pirates sails near you they want your gold");
-		System.out.println("Would you like to Fight or Run");
-		System.out.println("Which would you like to try: ");  
-				try {
+		System.out.println("A ship of pirates sails near you; they want your gold.");
+		System.out.println("Would you like to Fight or Run.");
+		System.out.println("Which would you like to try (Fight or Run): ");  
+		try {
 			do {
 				runOrFightPirates = br.readLine();
 				
@@ -585,7 +619,7 @@ public class TextBasedGame {
 					runOrFightPiratesChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Run or Fight)");
 				}
 			} while (runOrFightPiratesChoice != true);
@@ -595,18 +629,21 @@ public class TextBasedGame {
      	}	
 	}
 	
-	static void runPirates(){
-		System.out.println("You died trying to get away form the pirates");
+	static void runPirates() {
+        // run from the pirates
+		System.out.println("You died trying to get away form the pirates.");
 	}
 	
-	static void fightPirates(){
+	static void fightPirates() {
+        // fight the pirates
+
 		String  takeHimWIthYouOrLeaveHimLakePirates;
 		Boolean takeHimWIthYouOrLeaveHimLakePiratesChoice = false;
 			
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("You killed the pirates but the man is knocked unconscious");
+		System.out.println("You killed the pirates but the man is knocked unconscious.");
 		System.out.println("Would you like to Take him with you or Leave him?");
-		System.out.println("Which would you like to try: ");
+		System.out.println("Which would you like to try (Take him with you or Leave him): ");
 		
 		try {
 			do {
@@ -620,7 +657,7 @@ public class TextBasedGame {
 					takeHimWIthYouOrLeaveHimLakePiratesChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Take him with you or Leave him)");
 				}
 			} while (takeHimWIthYouOrLeaveHimLakePiratesChoice != true);
@@ -630,32 +667,37 @@ public class TextBasedGame {
      	}
 	}
 	
-	static void takeHimWIthYouLakePirates(){
-		System.out.println("You take him with you and hope that he is going to be ok");
-		System.out.println("When you get to Star city you go to the hospital");
+	static void takeHimWIthYouLakePirates() {
+        // take the man with you
+
+		System.out.println("You take him with you and hope that he is going to be ok.");
+		System.out.println("When you get to Star City you go to the hospital.");
 		System.out.println("");
-		System.out.println("Thank you for playing see you next time ");
+		System.out.println("Thank you for playing see you next time.");
 		
 	}
 	
-	static void LeaveHimLakePirates (){
-		System.out.println("You got away safely and made your way towards Star city");
+	static void LeaveHimLakePirates () {
+        // leave the man to die
+
+		System.out.println("You got away safely and made your way towards Star City.");
 		System.out.println("You enter the bar to meet up with your contact for your next job.");
-		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you ");
+		System.out.println("He buys you a drink ... It’s poisoned and there's no one to help you.");
 		System.out.println("You died =(");
 		
 	}
 	
-	
-	static void swim(){
+	static void swim() {
+        // swim the lake
+
 		String  helpOrFight;
 		Boolean helpOrFightChoice = false;
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("A giant squid has seen you and is trying to eat you! ");
-		System.out.println("Would you like to Fight or call for Help");
-		System.out.println("Which would you like to try: ");  
-				try {
+		System.out.println("A giant squid has seen you and is trying to eat you!");
+		System.out.println("Would you like to Fight or call for Help.");
+		System.out.println("Which would you like to try (Fight or Help): ");  
+		try {
 			do {
 				helpOrFight = br.readLine();
 				
@@ -667,7 +709,7 @@ public class TextBasedGame {
 					helpOrFightChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Help or Fight)");
 				}
 			} while (helpOrFightChoice != true);
@@ -676,15 +718,18 @@ public class TextBasedGame {
 			System.out.println(e);
      	}	
 	}
-	static void helpLake(){
+
+	static void helpLake() {
+        // call for help in the lake
+
 		String  takeHimWIthYouOrLeaveHimLakeSquid;
 		Boolean takeHimWIthYouOrLeaveHimLakeSquidChoice = false;
 			
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("The man with the boat comes and help you");
-		System.out.println("You killed the squid but the man is knocked unconscious");
+		System.out.println("The man with the boat comes and help you.");
+		System.out.println("You killed the squid but the man is knocked unconscious.");
 		System.out.println("Would you like to Take him with you or Leave him?");
-		System.out.println("Which would you like to try: ");
+		System.out.println("Which would you like to try (Take him with you or Leave him): ");
 		
 		try {
 			do {
@@ -698,7 +743,7 @@ public class TextBasedGame {
 					takeHimWIthYouOrLeaveHimLakeSquidChoice = true;
 				}
 				else {
-					System.out.println("Invalid input");
+					System.out.println("Invalid input.");
 					System.out.println("Which would you like to try: (Take him with you or Leave him)");
 				}
 			} while (takeHimWIthYouOrLeaveHimLakeSquidChoice != true);
@@ -708,22 +753,27 @@ public class TextBasedGame {
      	}
 	}	
 	
-	static void fightLake(){
+	static void fightLake() {
+        // fight the squid
+
 		System.out.println("You died trying to fight the squid =(");
 	}
-	static void takeHimWIthYouLakeSquid(){
-		System.out.println("You take him with you and hope that he is going to be ok");
-		System.out.println("When you get to Star city you go to the hospital");
+
+	static void takeHimWIthYouLakeSquid() {
+        // take the man with you
+
+		System.out.println("You take him with you and hope that he is going to be ok.");
+		System.out.println("When you get to Star City you go to the hospital.");
 		System.out.println("");
-		System.out.println("Thank you for playing see you next time ");
+		System.out.println("Thank you for playing see you next time.");
 	}
-	static void LeaveHimLakeSquid(){
-		System.out.println("You got away safely and made your way towards Star city");
+
+	static void LeaveHimLakeSquid() {
+        // leave the man
+
+		System.out.println("You got away safely and made your way towards Star city.");
 		System.out.println("You enter the bar to meet up with your contact for your next job.");
-		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you ");
+		System.out.println("He buys you a drink….. It’s poisoned and there's no one to help you.");
 		System.out.println("You died =(");
 	}
 }
-
-
-
